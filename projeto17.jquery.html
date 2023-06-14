@@ -35,8 +35,10 @@
             <ul class="nav">
                 <li><a class="nav-link active link-dark" href="./projeto17.jquery.html">Home</a></li>
                 <li><a class="nav-link link-dark" href="#produtos">Produtos</a></li>
-                <li><a class="nav-link link-dark" href="#sobre" data-bs-toggle="modal" data-bs-target="#modalSobre">Sobre</a></li>
-                <li><a class="nav-link link-dark" href="#contato" data-bs-toggle="modal" data-bs-target="#modalContato">Contato</a></li>
+                <li><a class="nav-link link-dark" href="#sobre" data-bs-toggle="modal"
+                        data-bs-target="#modalSobre">Sobre</a></li>
+                <li><a class="nav-link link-dark" href="#contato" data-bs-toggle="modal"
+                        data-bs-target="#modalContato">Contato</a></li>
             </ul>
         </div>
     </div>
@@ -84,7 +86,8 @@
                         <img class="piscar-image rounded-circle img-responsive" src="./imagem/petshopazul.jpg" alt=""
                             style="width: 40%;">
                         <p class="display-4 text-primary animate__animated animate__slideInUp owl-carousel"
-                            style="font-size: 2rem;">Encontre os melhores acessórios para o seu amado pet na nossa loja!</p>
+                            style="font-size: 2rem;">Encontre os melhores acessórios para o seu amado pet na nossa loja!
+                        </p>
                     </div>
                 </div>
             </div>
@@ -101,7 +104,7 @@
                     <div class="section-heading">
                         <div class="line-dec"></div>
                         <h1 id="produtos">Destaques</h1>
-                    </div> 
+                    </div>
                 </div>
                 <div class="col-md-12 col-md-6">
                     <div class="owl-carousel owl-theme">
@@ -192,106 +195,135 @@
         </div>
     </div>
        
+       
     
 
   <!-- Modal Contato -->
-  <div class="modal fade" id="modalContato" tabindex="-1" aria-labelledby="modalContatoLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content" style="background-color: #e0f7fa;">
-            <div class="modal-header bg-primary">
-                <h5 class="modal-title" id="modalContatoLabel">Contato</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <form action="post" class="form" id="contact-form">
-                    <div class="mb-3">
-                        <label for="nome" class="form-label">Nome</label>
-                        <input type="text" name="nome" id="nome" title="Insira seu nome completo" class="form-control border-primary text-dark fw-bold" placeholder="Digite seu nome" aria-describedby="helpNome">
-                        <div id="nome-error" ></div>
-                        <small id="helpNome" class="text-muted d-none">
-                            Digite um nome válido
-                        </small>
-                    </div>
 
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" name="email" id="email" class="form-control border-primary text-dark fw-bold" placeholder="Digite seu e-mail" aria-describedby="helpEmail">
-                        <div id="email-error" ></div>
-                        <small id="helpEmail" class="text-muted d-none">
-                            Digite um e-mail válido
-                        </small>
-                    </div>
+    
 
-                    <div class="mb-3">
-                        <label for="date" class="form-label">Data</label>
-                        <input type="text" name="date" id="date" class="form-control border-primary text-dark fw-bold" placeholder="Digite a data" aria-describedby="helpDate">
-                        <div id="date-error" ></div>
-                        <small id="helpDate" class="text-muted d-none">
-                            Digite uma data válida
-                        </small>
-                    </div>
+  <!-- Modal Contato -->
+    <div class="modal fade" id="modalContato" tabindex="-1" aria-labelledby="modalContatoLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" style="background-color: #e0f7fa;">
+                <div class="modal-header bg-primary">
+                    <h5 class="modal-title" id="modalContatoLabel">Contato</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="post" class="form" id="contact-form">
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">Nome</label>
+                            <input type="text" name="nome" id="nome" title="Insira seu nome completo"
+                                class="form-control border-primary text-dark fw-bold" placeholder="Digite seu nome"
+                                aria-describedby="helpNome">
+                            <div id="nome-error"></div>
+                            <small id="helpNome" class="text-muted d-none">
+                                Digite um nome válido
+                            </small>
+                        </div>
 
-                    <div class="mb-3">
-                        <label for="hora" class="form-label">Hora</label>
-                        <input type="text" name="hora" id="hora" class="form-control border-primary text-dark fw-bold" placeholder="Digite a hora" aria-describedby="helpHora">
-                        <div id="hora-error" ></div>
-                        <small id="helpHora" class="text-muted d-none">
-                            Digite uma hora válida
-                        </small>
-                    </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" name="email" id="email"
+                                class="form-control border-primary text-dark fw-bold" placeholder="Digite seu e-mail"
+                                aria-describedby="helpEmail">
+                            <div id="email-error"></div>
+                            <small id="helpEmail" class="text-muted d-none">
+                                Digite um e-mail válido
+                            </small>
+                        </div>
 
-                    <div class="mb-3">
-                        <label for="cep" class="form-label">CEP</label>
-                        <input type="text" name="cep" id="cep" class="form-control border-primary text-dark fw-bold" placeholder="Digite seu CEP" aria-describedby="helpCEP">
-                        <div id="cep-error" ></div>
-                        <small id="helpCEP" class="text-muted d-none">
-                            Digite um CEP válido
-                        </small>
-                    </div>
+                        <div class="mb-3">
+                            <label for="date" class="form-label">Data</label>
+                            <input type="text" name="date" id="date"
+                                class="form-control border-primary text-dark fw-bold" placeholder="Digite a data"
+                                aria-describedby="helpDate">
+                            <div id="date-error"></div>
+                            <small id="helpDate" class="text-muted d-none">
+                                Digite uma data válida
+                            </small>
+                        </div>
 
-                    <div class="mb-3">
-                        <label for="phone" class="form-label">Celular</label>
-                        <input type="text" name="phone" id="phone" class="form-control border-primary text-dark fw-bold" placeholder="Digite seu celular" aria-describedby="helpCelular" required>
-                        <div id="phone-error" ></div>
-                        <small id="helpCelular" class="text-muted d-none">
-                            Digite um celular válido
-                        </small>
-                    </div>
+                        <div class="mb-3">
+                            <label for="hora" class="form-label">Hora</label>
+                            <input type="text" name="hora" id="hora"
+                                class="form-control border-primary text-dark fw-bold" placeholder="Digite a hora"
+                                aria-describedby="helpHora">
+                            <div id="hora-error"></div>
+                            <small id="helpHora" class="text-muted d-none">
+                                Digite uma hora válida
+                            </small>
+                        </div>
 
-                    <div class="mb-3">
-                        <label for="cpf" class="form-label">CPF</label>
-                        <input type="text" name="cpf" id="cpf" class="form-control border-primary text-dark fw-bold" placeholder="Digite seu CPF" aria-describedby="helpCPF" required>
-                        <div id="cpf-error" ></div>
-                        <small id="helpCPF" class="text-muted d-none">
-                            Digite um CPF válido
-                        </small>
-                    </div>
+                        <div class="mb-3">
+                            <label for="cep" class="form-label">CEP</label>
+                            <input type="text" name="cep" id="cep" class="form-control border-primary text-dark fw-bold"
+                                placeholder="Digite seu CEP" aria-describedby="helpCEP">
+                            <div id="cep-error"></div>
+                            <small id="helpCEP" class="text-muted d-none">
+                                Digite um CEP válido
+                            </small>
+                        </div>
 
-                    <button type="submit" class="btn btn-primary">Enviar</button>
-                </form>
-            </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Celular</label>
+                            <input type="text" name="phone" id="phone"
+                                class="form-control border-primary text-dark fw-bold" placeholder="Digite seu celular"
+                                aria-describedby="helpCelular" required>
+                            <div id="phone-error"></div>
+                            <small id="helpCelular" class="text-muted d-none">
+                                Digite um celular válido
+                            </small>
+                        </div>
 
-            <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fechar</button>
+                        <div class="mb-3">
+                            <label for="cpf" class="form-label">CPF</label>
+                            <input type="text" name="cpf" id="cpf" class="form-control border-primary text-dark fw-bold"
+                                placeholder="Digite seu CPF" aria-describedby="helpCPF" required>
+                            <div id="cpf-error"></div>
+                            <small id="helpCPF" class="text-muted d-none">
+                                Digite um CPF válido
+                            </small>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fechar</button>
+                </div>
             </div>
         </div>
     </div>
-  </div>
 
-
-  <!-- Modal Sobre -->
-  <div class="modal fade" id="modalSobre" tabindex="-1" aria-labelledby="modalSobreLabel" aria-hidden="true">
+    <div class="modal fade" id="modalSobre" tabindex="-1" aria-labelledby="modalSobreLabel" aria-hidden="true">
         <div class="modal-dialog" style="background-color: #e0f7fa;">
-           <div class="modal-content bg-primary">
-                <h5 class="modal-title text-dark  fw-bold " id="modalSobreLabel" >Sobre</h5>
+            <div class="modal-content bg-primary">
+                <h5 class="modal-title text-dark  fw-bold " id="modalSobreLabel">Sobre</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <p class="text-dark fw-bold">Descubra o incrível universo do pet shop do @Gatopetsdog! Aqui, você encontrará muito mais do que produtos e serviços para os seus queridos animais de estimação. Vamos além, proporcionando entretenimento e conhecimento através dos nossos vídeos exclusivos sobre curiosidades dos pets.</p>
-               <p class="text-dark fw-bold">Em nosso pet shop, você terá acesso a uma variedade incrível de produtos cuidadosamente selecionados para o bem-estar e diversão dos seus peludos. De alimentos saudáveis e brinquedos interativos a acessórios estilosos e produtos de higiene premium, temos tudo o que você precisa para mimar o seu pet.</p>
-              <p class="text-dark fw-bold">Mas não paramos por aí! Em parceria com especialistas em animais, produzimos vídeos fascinantes que revelam curiosidades surpreendentes sobre diferentes espécies. De fatos intrigantes a comportamentos peculiares, nossos conteúdos cativantes vão te encantar e te transformar em um verdadeiro expert em pets.</p>
-              <p class="text-dark fw-bold">Na @Gatopetsdog, a saúde e o bem-estar dos animais são prioridades. Trabalhamos apenas com produtos de alta qualidade, das marcas mais confiáveis do mercado. Sua tranquilidade e alegria são essenciais para nós, e por isso nos dedicamos a oferecer o melhor para o seu peludo.</p>
-              <p class="text-dark fw-bold">Visite-nos agora mesmo e mergulhe nesse universo encantador! A @gatopetsdog é o lugar perfeito para amantes de pets como você. Sua satisfação e a felicidade do seu animalzinho são as nossas maiores recompensas. Esperamos por você em nosso pet shop!</p>
+                <p class="text-dark fw-bold">Descubra o incrível universo do pet shop do @Gatopetsdog! Aqui, você
+                    encontrará muito mais do que produtos e serviços para os seus queridos animais de estimação. Vamos
+                    além, proporcionando entretenimento e conhecimento através dos nossos vídeos exclusivos sobre
+                    curiosidades dos pets.</p>
+                <p class="text-dark fw-bold">Em nosso pet shop, você terá acesso a uma variedade incrível de produtos
+                    cuidadosamente selecionados para o bem-estar e diversão dos seus peludos. De alimentos saudáveis e
+                    brinquedos interativos a acessórios estilosos e produtos de higiene premium, temos tudo o que você
+                    precisa para mimar o seu pet.</p>
+                <p class="text-dark fw-bold">Mas não paramos por aí! Em parceria com especialistas em animais,
+                    produzimos vídeos fascinantes que revelam curiosidades surpreendentes sobre diferentes espécies. De
+                    fatos intrigantes a comportamentos peculiares, nossos conteúdos cativantes vão te encantar e te
+                    transformar em um verdadeiro expert em pets.</p>
+                <p class="text-dark fw-bold">Na @Gatopetsdog, a saúde e o bem-estar dos animais são prioridades.
+                    Trabalhamos apenas com produtos de alta qualidade, das marcas mais confiáveis do mercado. Sua
+                    tranquilidade e alegria são essenciais para nós, e por isso nos dedicamos a oferecer o melhor para o
+                    seu peludo.</p>
+                <p class="text-dark fw-bold">Visite-nos agora mesmo e mergulhe nesse universo encantador! A @gatopetsdog
+                    é o lugar perfeito para amantes de pets como você. Sua satisfação e a felicidade do seu animalzinho
+                    são as nossas maiores recompensas. Esperamos por você em nosso pet shop!</p>
             </div>
             <div class="modal-footer">
                 <button type="button " class="btn btn-primary" data-bs-dismiss="modal">Fechar</button>
@@ -299,9 +331,7 @@
           
         </div>
     </div>
-
- <!-- ... (código HTML posterior) ... -->
-    <div class="footer">
+   <div class="footer bg-primary">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-md-6">
@@ -318,28 +348,55 @@
                 <div class="col-md-12">
                     <div class="social-icons">
                         <ul>
-                        <li><a href="https://www.facebook.com/gatopetsdog" target="_blank"><i class="fa-brands fa-facebook fa-xl"></i></a></li>
-                        <li><a href="https://www.instagram.com/gatopetsdog/" target="_blank"><i class="fa-brands fa-instagram fa-xl"></i></a></li>
-                        <li><a href="https://www.youtube.com/channel/UC2aKzbfj7MFzdsNfyvwrBMQ" target="_blank"><i class="fa-brands fa-youtube fa-xl"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/roseli-mariano/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a></li>
-                      </ul>
+                            <li><a href="https://www.facebook.com/gatopetsdog" target="_blank"><i
+                                        class="fa-brands fa-facebook fa-xl"></i></a></li>
+                            <li><a href="https://www.instagram.com/gatopetsdog/" target="_blank"><i
+                                        class="fa-brands fa-instagram fa-xl"></i></a></li>
+                            <li><a href="https://www.youtube.com/channel/UC2aKzbfj7MFzdsNfyvwrBMQ" target="_blank"><i
+                                        class="fa-brands fa-youtube fa-xl"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/roseli-mariano/" target="_blank"><i
+                                        class="fa-brands fa-linkedin fa-xl"></i></a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <div class="sub-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <p>© 2023 Gatopetsdog. Todos os direitos reservados
-                        Desenvolvido por: Roseli Mariano</p>
-                </div>
+     <footer>
+  <!-- Resto do conteúdo do footer -->
+  <div class="row">
+    <div class="col-md-9 mx-auto">
+      <div class="row justify-content-center">
+        <div class="col-md-6 text-center mb-4">
+          <h2>Receba nossas promoções</h2>
+          <form action="#" method="POST" class="row form-primary">
+            <div class="col-md-6 mb-4">
+              <label for="subscribe-name" class="form-label">Nome:</label>
+              <input type="text" class="form-control" id="subscribe-name" name="subscribe-name" required>
             </div>
+            <div class="col-md-6 mb-4">
+              <label for="subscribe-email" class="form-label">E-mail:</label>
+              <input type="email" class="form-control" id="subscribe-email" name="subscribe-email" required>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Inscrever-se</button>
+            </div>
+          </form>
         </div>
+      </div>
     </div>
-    
+  </div>
+  <div class="sub-footer bg-primary">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p>© 2023 Gatopetsdog. Todos os direitos reservados
+            Desenvolvido por: Roseli Mariano</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
 
 
 
@@ -349,7 +406,7 @@
     <script src="./vendor/OwlCarousel/dist/owl.carousel.min.js"></script>
     <script src="./vendor/jQuery-Mask/jquery.mask.min.js"></script>
     <script src="./vendor/jquery-ui/jquery-ui.min.js"></script>
-    
+
     <script src="https://kit.fontawesome.com/2c4e37e27c.js" crossorigin="anonymous"></script>
 
 

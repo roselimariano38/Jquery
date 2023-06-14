@@ -7,6 +7,7 @@ body {
     width: 100%;
   }
 }
+
 img {
   max-width: 100%;
   height: auto;
@@ -108,7 +109,7 @@ a {
 
 /* Estilos para o rodapé */
 .footer {
-  background-color: #525eff;
+
   padding: 50px 0;
   color: #fff;
 }
@@ -249,11 +250,12 @@ a {
   max-width: 100%;
   height: auto;
 }
+
 @media (max-width: 768px) {
-  /* Estilos para dispositivos com largura de tela menor ou igual a 768px */
+
   .navbar {
     height: auto;
   }
 
-  /* Outros estilos específicos */
+
 }
