@@ -7,6 +7,10 @@ body {
     width: 100%;
   }
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 @keyframes blink {
   0% {
@@ -169,7 +173,7 @@ a {
 
 
 .owl-carousel .item .owl-stage-outer .owl-stage .owl-item p.owl-carousel {
-  animation: blinking 2s infinite;
+  animation: blinking s infinite;
 }
 
 
@@ -236,9 +240,20 @@ a {
 }
 
 
-@media (max-width: 390px) {
-  .navbar-brand img {
-    width: 100%;
+
+.rounded-circle {
+  border-radius: 50%;
+}
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+@media (max-width: 768px) {
+  /* Estilos para dispositivos com largura de tela menor ou igual a 768px */
+  .navbar {
     height: auto;
   }
+
+  /* Outros estilos específicos */
 }
